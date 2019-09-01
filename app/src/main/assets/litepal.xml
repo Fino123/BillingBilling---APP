@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value = "bill_table"/>
+    <version value = "2"/>
+
+    <list>
+        <mapping class = "com.example.billingbilling.db.Bill"/>
+    </list>
+
+</litepal>

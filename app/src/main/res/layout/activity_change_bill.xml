@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddBill">
+
+    <com.example.billingbilling.util.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.example.billingbilling.util.TitleLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="请选择消费类型："
+            android:layout_weight="9"
+            android:textSize="26dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/change_text_type"
+            android:layout_weight="8"
+            android:textSize="26dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/change_type_medical"
+            android:text="医疗消费"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/change_type_survival"
+            android:text="生存消费"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/change_type_water_electric"
+            android:text="水电消费"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/change_type_entertainment"
+            android:text="娱乐消费"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:text=""
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="请选择消费方式："
+            android:layout_weight="9"
+            android:textSize="26dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/change_text_input_way"
+            android:layout_weight="8"
+            android:textSize="26dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="现金支付"
+            android:id="@+id/change_way_cash"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/change_way_card"
+            android:text="银行卡支付"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/change_way_internet"
+            android:text="网络支付"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:text=""
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="请输入消费金额："
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/change_edit_cost"
+            android:hint="金额需大于等于0"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:text=""
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="请输入消费日期"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="年："
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/change_edit_year"
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="月："
+                android:textSize="18dp"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/change_edit_month"
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="日："
+                android:textSize="18dp"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/change_edit_day"
+                android:layout_weight="0.70"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:text=""
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/change_button_change_bill"
+        android:text="修改账单"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

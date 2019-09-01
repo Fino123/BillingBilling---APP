@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SetMaximum">
+
+    <com.example.billingbilling.util.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.example.billingbilling.util.TitleLayout>
+
+    <LinearLayout
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:src="@mipmap/maxofmonth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:text="设置每月消费上限"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/inputMaxMonth"
+            android:layout_width="114dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="元"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:src="@mipmap/maxofday"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:text="设置每日消费上限"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/inputMaxDay"
+            android:layout_width="114dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="元"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/setMaxCertain"
+        android:layout_marginTop="30dp"
+        android:text="确定"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

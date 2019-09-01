@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_count_cost"
+            android:icon="@mipmap/count_cost_image"
+            android:title="统计消费金额"/>
+
+        <item
+            android:id="@+id/nav_count_average"
+            android:icon="@mipmap/count_average_cost_image"
+            android:title="计算日均消费"/>
+
+        <item
+            android:id="@+id/nav_count_type"
+            android:icon="@mipmap/count_type_image"
+            android:title="统计消费类型"/>
+
+        <item
+            android:id="@+id/nav_add_max"
+            android:icon="@mipmap/add_max_image"
+            android:title="添加目标上限"/>
+
+    </group>
+</menu>

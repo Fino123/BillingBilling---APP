@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountSumList">
+
+    <com.example.billingbilling.util.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.example.billingbilling.util.TitleLayout>
+
+    <Button
+        android:id="@+id/count_by_month"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:text="按月份统计"
+        android:textSize="24dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/count_by_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/count_by_month"
+        android:layout_marginBottom="133dp"
+        android:layout_centerInParent="true"
+        android:text="按年份统计"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/count_by_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/count_by_month"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="125dp"
+        android:layout_marginBottom="133dp"
+        android:text="按日期统计"
+        android:textSize="24dp" />
+
+
+</RelativeLayout>
